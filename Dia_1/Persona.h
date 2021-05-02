@@ -8,9 +8,11 @@
 
 using namespace std;
 
-class Persona{
+class Persona{ // Clase (encapsulamiento)
 
-  private:
+  private: // Modificar de acceso "privado"
+
+    // Atributos (abstracción)
 
     string nombre;
     string apellidoPaterno;
@@ -22,7 +24,9 @@ class Persona{
     bool identificadorHambre;
     bool identificadorSed;
 
-  public:
+  public: // Modificar de acceso "público"
+
+    // Método (función) constructor
 
     explicit Persona(string nombreC, string apellidoPaternoC, string apellidoMaternoC,
                      int edadC, char generoC, float estaturaC, string colorCabelloC){
