@@ -28,6 +28,18 @@ class Persona{ // Clase (encapsulamiento)
 
     // Método (función) constructor
 
+    explicit Persona(){ // Constructor vacío
+      nombre = "N/A";
+      apellidoPaterno = "N/A";
+      apellidoMaterno = "N/A";
+      edad = 30;
+      genero = 'X';
+      estatura = 1.7;
+      colorCabello = "Negro";
+      identificadorHambre = 0;
+      identificadorSed = 0;
+    }
+
     explicit Persona(string nombreC, string apellidoPaternoC, string apellidoMaternoC,
                      int edadC, char generoC, float estaturaC, string colorCabelloC){
       
@@ -53,18 +65,18 @@ class Persona{ // Clase (encapsulamiento)
       genero = generoC;
       estatura = 1.7;
       colorCabello = "Negro";
-      identificadorHambre = false;
-      identificadorSed = false;
+      identificadorHambre = false; // true
+      identificadorSed = false; // true == 1
     
     }
 
-    // Sobrecargamos una vez más el constructor Persona
+    // Sobrecargamos una vez más el constructor Persona (mala práctica)
     explicit Persona(string nombreC){ nombre = nombreC; }
 
     // Creamos un método para imprimir todos los atributos de una clase
     void imprimirPersona(){
       cout << "Nombre completo: " << nombre << " " << apellidoPaterno << " " << apellidoMaterno
-        << endl << "Edad: " << edad << " años \nGenero: " << genero << "\nEstatura: " << estatura
+        << endl << "Edad: " << edad << " años\nGenero: " << genero << "\nEstatura: " << estatura
         << " metros\nColor de cabello: " << colorCabello << "\n¿Tiene hambre? " << identificadorHambre
         << "\n¿Tiene sed? " << identificadorSed << endl; 
     } // ¿Cómo mejorarías este método?
@@ -109,12 +121,15 @@ class Persona{ // Clase (encapsulamiento)
     // Método que nos permite conocer si la persona tiene hambre y sed
     void estadoHambreSed(){
       cout << nombre;
-      if (!identificadorHambre) cout << " no";
+      if (!identificadorHambre){ cout << " no"; }
       cout << " tiene hambre y";
       if (!identificadorSed) cout << " no";
       cout << " tiene sed." << endl;
     }
 
+    // pintarCabello(/* Parametros */){ // Ejercicio 
+    //   // Método
+    // }
 };
 
 #endif

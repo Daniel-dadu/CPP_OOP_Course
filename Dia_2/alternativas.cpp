@@ -15,8 +15,9 @@ class Ejemplo{
     int numero;
   
   public:
-    // explicit Ejemplo(int); // Constructor con explicit
-    Ejemplo(int); // Constructor normal
+    explicit Ejemplo(int); // Constructor con explicit
+    // Ejemplo(int); // Constructor normal
+    
     int getNumero();
     void printMore(int, string, char, float); // No es necesario escribir el nombre de las variables aquí
 
@@ -44,8 +45,8 @@ void Ejemplo::printMore(int a, string b, char c, float d){
 
 int main(){
 
-    // Ejemplo obj(3450); // Método común
-    Ejemplo obj = 3450; // Método alternativo (solo funciona con constructores que reciben 1 atributo y que no son explícitos)
+    Ejemplo obj(3450); // Método común
+    // Ejemplo obj = 3400; // Método alternativo (solo funciona con constructores que reciben 1 atributo y que no son explícitos)
     cout << "Valor de 'numero' (usando getNumero): " << obj.getNumero() << endl;
     obj.printNumero();
     cout << endl;
