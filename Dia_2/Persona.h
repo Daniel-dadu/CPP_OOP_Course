@@ -44,7 +44,7 @@ class Persona{ // Clase (encapsulamiento)
     } // Tutorial que explica el explicit: https://www.youtube.com/watch?v=lsdC3F27lt0
 
     // Sobrecargamos el constructor Persona
-    Persona(string nombreC, string apellidoPaternoC, string apellidoMaternoC, char generoC){
+    explicit Persona(string nombreC, string apellidoPaternoC, string apellidoMaternoC, char generoC){
       
       nombre = nombreC;
       apellidoPaterno = apellidoPaternoC;
@@ -58,14 +58,16 @@ class Persona{ // Clase (encapsulamiento)
     
     }
 
-    Persona(string nombre){ this->nombre = nombre; }
+    // Sobrecargamos una vez más el constructor Persona
+    explicit Persona(string nombreC){ nombre = nombreC; }
 
+    // Creamos un método para imprimir todos los atributos de una clase
     void imprimirPersona(){
       cout << "Nombre completo: " << nombre << " " << apellidoPaterno << " " << apellidoMaterno
         << endl << "Edad: " << edad << " años \nGenero: " << genero << "\nEstatura: " << estatura
         << " metros\nColor de cabello: " << colorCabello << "\n¿Tiene hambre? " << identificadorHambre
         << "\n¿Tiene sed? " << identificadorSed << endl; 
-    }
+    } // ¿Cómo mejorarías este método?
 
     // Setters (Modificación/asignación de atributos)
     void setEdad(int edadC) { edad = edadC; }
@@ -104,15 +106,15 @@ class Persona{ // Clase (encapsulamiento)
       identificadorHambre = 1;
     }
 
+    // Método que nos permite conocer si la persona tiene hambre y sed
     void estadoHambreSed(){
-
       cout << nombre;
       if (!identificadorHambre) cout << " no";
       cout << " tiene hambre y";
       if (!identificadorSed) cout << " no";
       cout << " tiene sed." << endl;
-      
     }
+
 };
 
 #endif

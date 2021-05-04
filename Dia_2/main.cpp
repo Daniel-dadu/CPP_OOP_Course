@@ -12,16 +12,19 @@
 int main(){
 
   Persona personaUno("Antonio", "Hernández", "Torres", 23, 'M', 1.75, "Negro"); // Objeto (instancia de una clase)
+  
   Persona personaDos("María", "Herrera", "Martínez", 'F'); // Objeto (instancia de una clase)
-  Persona personaTres("Lalo");
   personaDos.imprimirPersona();
+  
   cout << endl;
+  Persona personaTres("Lalo"); // Objeto (instancia de una clase)
   personaTres.imprimirPersona(); // A pesar de no haber definido los demás atributos, no marca error
 
   cout << endl;
   cout << personaDos.getNombre() << " tiene " << personaDos.getEdad() 
         << " años y mide " << personaDos.getEstatura() << " metros." << endl;
-  personaDos.setEdad(27);
+  
+  personaDos.setEdad(27); // A través de los setters vamos a cambiar los atributos de un objeto
   personaDos.setEstatura(1.78);
   cout << "Ahora " << personaDos.getNombre() << " tiene " << personaDos.getEdad() 
         << " años y mide " << personaDos.getEstatura() << " metros." << endl;
