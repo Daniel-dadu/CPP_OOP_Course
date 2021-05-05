@@ -49,7 +49,7 @@ int main(){
     // personasA[i].setEstatura(estatura);
     // personasA[i].setColorCabello(colorCabello);
 
-    // personasa[i].imprimirPersona();
+    // personasA[i].imprimirPersona();
 
   }
 
