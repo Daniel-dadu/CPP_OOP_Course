@@ -18,6 +18,16 @@ class Empleado {
 
         void imprimirEmpleado();
 
+        void setNombreEmpleado(string);
+        void setApellidoEmpleado(string);
+        void setEdadEmpleado(int);
+        void setGeneroEmpleado(char);
+        void setEstaturaEmpleado(float);
+        void setColorCabelloEmpleado(string);
+
+        void setNomina(int);
+        void setEmpresa(string);
+        
         void cambioEmpresa(string);
 };
 
@@ -45,6 +55,19 @@ void Empleado::imprimirEmpleado(){
     miPersona.imprimirPersona();
     cout << "Nómina: " << nomina << "\nEmpresa: " << empresa << endl;
 }
+
+void Empleado::setNombreEmpleado(string nombreEmpleadoC) { 
+    miPersona.setNombre(nombreEmpleadoC); 
+}
+
+void Empleado::setApellidoEmpleado(string apellidoEmpleadoC) { miPersona.setApellido(apellidoEmpleadoC); }
+void Empleado::setEdadEmpleado(int edadEmpleadoC) { miPersona.setEdad(edadEmpleadoC); }
+void Empleado::setGeneroEmpleado(char generoEmpleadoC) { miPersona.setGenero(generoEmpleadoC); }
+void Empleado::setEstaturaEmpleado(float estaturaEmpleadoC) { miPersona.setEstatura(estaturaEmpleadoC); }
+void Empleado::setColorCabelloEmpleado(string colorCabelloEmpleadoC) { miPersona.setColorCabello(colorCabelloEmpleadoC); }
+
+void Empleado::setNomina(int nominaC) { nomina = nominaC; }
+void Empleado::setEmpresa(string empresaC) { empresa = empresaC; }
 
 void Empleado::cambioEmpresa(string nuevaEmpresa){
     empresa = nuevaEmpresa;

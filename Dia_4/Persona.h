@@ -54,7 +54,7 @@ class Persona{ // Clase (encapsulamiento)
         << " años \nGenero: " << ((genero == 'M') ? "Masculino" : (genero == 'F') ? "Femenino" : 
         "Sin especificar") << "\nEstatura: " << estatura << " metros\nColor de cabello: " << colorCabello
         << "\n¿Tiene hambre? " << ((identificadorHambre) ? "Sí" : "No") << endl; 
-    } // ¿Cómo mejorarías este método?
+    }
 
     // Setters (Modificación/asignación de atributos)
     void setNombre(string nombreC) { nombre = nombreC; }

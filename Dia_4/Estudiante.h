@@ -72,6 +72,7 @@ Estudiante::Estudiante(string nombreC, string apellidoC, int edadC, char generoC
 // Creamos un método para imprimir todos los atributos de una clase
 void Estudiante::imprimirEstudiante(){
     imprimirPersona();
+    // cout << "Nombre: " << nombre << " " << apellido << endl;
     cout << "Matrícula: " << matricula << "\nEscuela: " << nombreEscuela << "\nCantidad de materias: " 
     << cantidadMaterias << "\nPromedio: " << promedio << endl; 
 }
@@ -88,6 +89,7 @@ int Estudiante::getCantidadMaterias() { return cantidadMaterias; }
 string Estudiante::getNombreEscuela() { return nombreEscuela; }
 float Estudiante::getPromedio() { return promedio; }
 
+// Métodos adicionales
 void Estudiante::cambiarEscuela(string nuevaEscuela){
     nombreEscuela = nuevaEscuela;
     matricula = rand() % 900 + 100; // Genera un número random entre 100-999

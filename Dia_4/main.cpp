@@ -26,7 +26,7 @@ int main(){
 
   cout << endl;
 
-  // Usando los getters de la clase Persona
+  // Usando los setters de la clase Persona
   estudianteDos.setNombre("Patricia");
   estudianteDos.setApellido("Luke");
   estudianteDos.setEdad(18);
@@ -34,7 +34,7 @@ int main(){
   estudianteDos.setEstatura(1.76);
   estudianteDos.setColorCabello("Amarillo");
   
-  // Usando los getters de la clase Estudiante
+  // Usando los setters de la clase Estudiante
   estudianteDos.setMatricula(126);
   estudianteDos.setCantidadMaterias(8);
   estudianteDos.setNombreEscuela("Oxford");
@@ -56,12 +56,23 @@ int main(){
   // Composición
   // -----------
 
-  Empleado empleadoUno;
+  Empleado empleadoUno("Mariano", "García", 39, 'M', 1.69, "Negro", 4356, "Colgate");
   empleadoUno.imprimirEmpleado();
 
   cout << endl;
 
-  Empleado empleadoDos("Mariano", "García", 39, 'M', 1.69, "Negro", 4356, "Colgate");
+  Empleado empleadoDos;
+  empleadoDos.imprimirEmpleado();
+
+  empleadoDos.setNombreEmpleado("Juana");
+  empleadoDos.setApellidoEmpleado("Carranza");
+  empleadoDos.setEdadEmpleado(32);
+  empleadoDos.setGeneroEmpleado('F');
+  empleadoDos.setEstaturaEmpleado(1.46);
+  empleadoDos.setColorCabelloEmpleado("Negro");
+
+  cout << endl;
+
   empleadoDos.imprimirEmpleado();
 
   cout << endl;
