@@ -1,6 +1,6 @@
 # Object-Oriented Programming in C++ Course
 
-Taught by *Daniel Maldonado* and *LozanoSoft*
+Taught by [Daniel Maldonado](https://github.com/Daniel-dadu) and [Ezequiel Lozano](https://github.com/EzequielLG)
 
 ---
 
