@@ -1,30 +1,30 @@
-# Curso introductorio de Programación Orientado a Objetos en C++
+# Object-Oriented Programming in C++ Course
 
-Impartido por *Daniel Maldonado* y *LozanoSoft*
+Taught by *Daniel Maldonado* and *LozanoSoft*
 
 ---
 
-## Grabaciones y temas abordados en cada clase:
+## Recordings and Topics Covered in Each Class:
 
-- **Día 1 (03/05/2021):** https://youtu.be/MvyEnkPDXGk
-    - Clases
-    - Atributos 
-    - Métodos
-    - Objetos (instancia de una clase)
-    - Constructor de clase
-- **Día 2 (04/05/2021):** https://youtu.be/IRwUWSKeSZo
-    - Sobrecarga de constructores
-    - Métodos setters y getters
-    - Llamado de métodos a través de los objetos
-- **Día 3 (05/05/2021):** https://youtu.be/K3jQn590sbk
-    - Lectura y escritura de archivos externos.
-    - Vector de objetos
-    - Arreglo dinámico de objetos
-- **Día 4 (06/05/2021):** https://youtu.be/POK0-5E1EdQ
-    - Herencia
-    - Composición
-- **Día 5 (07/05/2021):** https://youtu.be/AFqKvdU8wb8
-    - Polimorfismo
-    - Clases abstractas (interfaces)
-    - Punteros
+- **Day 1 (03/05/2021):** https://youtu.be/MvyEnkPDXGk
+    - Classes
+    - Attributes
+    - Methods
+    - Objects (instances of a class)
+    - Class constructor
+- **Day 2 (04/05/2021):** https://youtu.be/IRwUWSKeSZo
+    - Constructor overloading
+    - Setter and getter methods
+    - Method invocation through objects
+- **Day 3 (05/05/2021):** https://youtu.be/K3jQn590sbk
+    - Reading and writing external files
+    - Object vectors
+    - Dynamic array of objects
+- **Day 4 (06/05/2021):** https://youtu.be/POK0-5E1EdQ
+    - Inheritance
+    - Composition
+- **Day 5 (07/05/2021):** https://youtu.be/AFqKvdU8wb8
+    - Polymorphism
+    - Abstract classes (interfaces)
+    - Pointers
 
